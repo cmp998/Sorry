@@ -1,5 +1,5 @@
 Team: Team 1
-Members: Connor Pautz, Austen Solvie, Hissah Almousa, Matthew Helbig, Alex Jacbos
+Members: Connor Pautz, Austen Solvie, Hissah Almousa, Matthew Helbig, Steven Jacbos
  
 Game Decision: Sorry
 
