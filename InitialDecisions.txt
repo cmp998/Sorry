@@ -1,0 +1,16 @@
+Team: Team 1
+Members: Connor Pautz, Austen Solvie, Hissah Almousa, Matthew Helbig, Alex Jacbos
+ 
+Game Decision: Sorry
+
+High-level requirements:
+
+1. Allow up to 4 players, any combination of AI and Real Players (At least two levels of AI skill)
+2. Implementation of drawing cards, shuffling cards and discarding cards
+3. The ability to choose which pawn to applied a certain move to
+4. Visualization of playing board and the pawns moving along it during live play
+
+Extra Requirements:
+5. Special sounds / animations when one pawn takes out another pawn
+6. Special characteristics of cards 6 and 9
+7. Color selection outside of the standard 4
