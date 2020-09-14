@@ -5,12 +5,15 @@ Game Decision: Sorry
 
 High-level requirements:
 
-1. Allow up to 4 players, any combination of AI and Real Players (At least two levels of AI skill)
-2. Implementation of drawing cards, shuffling cards and discarding cards
-3. The ability to choose which pawn to applied a certain move to
-4. Visualization of playing board and the pawns moving along it during live play
+1. Full implementation of the board game of Sorry! (https://en.wikipedia.org/wiki/Sorry!_(game)) and all of its base rules/constraints
+2. Allow up to 4 players, with any combination of AI and Real Players (At least two levels of AI skill, Easy and Hard)
+3. Implementation of drawing cards, shuffling cards, and discarding cards
+4. The ability to choose which piece to apply a certain move to
+5. No illegal moves or piece choices
+6. Visualization of playing board and the pieces moving along it during live play
 
 Extra Requirements:
-5. Special sounds / animations when one pawn takes out another pawn
-6. Special characteristics of cards 6 and 9
-7. Color selection outside of the standard 4
+7. Potential varying speeds of gameplay (such as increasing piece speed or removing movement animation)
+8. Special sounds / animations when one piece takes out another piece
+9. Special characteristics for new cards such as 6 and 9, which are not present in the base game
+10. Alternate Board styles and Color selection for the pieces (outside of the standard 4 piece colors)
