@@ -311,6 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9662908}
   - component: {fileID: 9662907}
+  - component: {fileID: 9662909}
   m_Layer: 0
   m_Name: YellowPieceD
   m_TagString: Untagged
@@ -382,6 +383,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9662909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9662906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1132649122}
+  - {fileID: 1090104919}
+  - {fileID: 892146878}
+  - {fileID: 519398433}
+  - {fileID: 577838036}
+  - {fileID: 1310295212}
+  - {fileID: 1735897199}
+  - {fileID: 2113131886}
+  - {fileID: 141683574}
+  - {fileID: 398923543}
+  - {fileID: 1835432976}
+  - {fileID: 1499876818}
+  - {fileID: 637989590}
+  - {fileID: 931304788}
+  - {fileID: 1284535301}
+  - {fileID: 659400739}
+  - {fileID: 793459758}
+  - {fileID: 629263880}
+  - {fileID: 1233994492}
+  - {fileID: 1137749497}
+  - {fileID: 482044070}
+  - {fileID: 1465505234}
+  - {fileID: 1542582230}
+  - {fileID: 519529918}
+  - {fileID: 51134336}
+  - {fileID: 150840489}
+  - {fileID: 1163752409}
+  - {fileID: 1695969071}
+  - {fileID: 2077026385}
+  - {fileID: 744277707}
+  - {fileID: 761631}
+  - {fileID: 1188172204}
+  - {fileID: 1097965548}
+  - {fileID: 363168212}
+  - {fileID: 1466638261}
+  - {fileID: 92091286}
+  - {fileID: 1378776105}
+  - {fileID: 1614910227}
+  - {fileID: 1609587601}
+  - {fileID: 1627825760}
+  - {fileID: 957853347}
+  - {fileID: 1238964729}
+  - {fileID: 295480865}
+  - {fileID: 443660273}
+  - {fileID: 802894776}
+  - {fileID: 1613753226}
+  - {fileID: 804233137}
+  - {fileID: 362125986}
+  - {fileID: 1662139701}
+  - {fileID: 1850935366}
+  - {fileID: 854808363}
+  - {fileID: 750579220}
+  - {fileID: 444059357}
+  - {fileID: 1805845680}
+  - {fileID: 614101001}
+  - {fileID: 1208742155}
+  - {fileID: 1253594607}
+  - {fileID: 1294698534}
+  - {fileID: 1438204689}
+  - {fileID: 1257260601}
+  - {fileID: 648301600}
+  - {fileID: 530662574}
+  - {fileID: 1759307824}
+  - {fileID: 1602705003}
+  - {fileID: 1432826921}
+  - {fileID: 823162389}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &13158690
 GameObject:
   m_ObjectHideFlags: 0
@@ -4244,8 +4327,9 @@ GameObject:
   m_Component:
   - component: {fileID: 207680135}
   - component: {fileID: 207680134}
+  - component: {fileID: 207680136}
   m_Layer: 0
-  m_Name: BluePieceB
+  m_Name: BluePieceC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4315,6 +4399,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &207680136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207680133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 986060796}
+  - {fileID: 1459254939}
+  - {fileID: 1555214198}
+  - {fileID: 602750764}
+  - {fileID: 2147045117}
+  - {fileID: 1548205936}
+  - {fileID: 917521845}
+  - {fileID: 1267226489}
+  - {fileID: 14545768}
+  - {fileID: 1389638797}
+  - {fileID: 19923927}
+  - {fileID: 1322732167}
+  - {fileID: 258276455}
+  - {fileID: 564932564}
+  - {fileID: 1014511737}
+  - {fileID: 905501621}
+  - {fileID: 223938608}
+  - {fileID: 571699155}
+  - {fileID: 1572492466}
+  - {fileID: 1646356549}
+  - {fileID: 173159407}
+  - {fileID: 1013205708}
+  - {fileID: 1733071132}
+  - {fileID: 1752841524}
+  - {fileID: 69009740}
+  - {fileID: 1507253741}
+  - {fileID: 1538121209}
+  - {fileID: 846835356}
+  - {fileID: 1041604051}
+  - {fileID: 50291005}
+  - {fileID: 529081613}
+  - {fileID: 25737407}
+  - {fileID: 2120363243}
+  - {fileID: 969565647}
+  - {fileID: 814665319}
+  - {fileID: 164631282}
+  - {fileID: 1480415777}
+  - {fileID: 1291006906}
+  - {fileID: 1691284762}
+  - {fileID: 98010733}
+  - {fileID: 2087279480}
+  - {fileID: 2105872886}
+  - {fileID: 1931897415}
+  - {fileID: 1236910136}
+  - {fileID: 1599789129}
+  - {fileID: 911271629}
+  - {fileID: 1311988047}
+  - {fileID: 880456882}
+  - {fileID: 2038833006}
+  - {fileID: 1438835946}
+  - {fileID: 1238625817}
+  - {fileID: 227569376}
+  - {fileID: 419978159}
+  - {fileID: 913641845}
+  - {fileID: 717199735}
+  - {fileID: 129688670}
+  - {fileID: 1172339054}
+  - {fileID: 869078993}
+  - {fileID: 770227459}
+  - {fileID: 1626081437}
+  - {fileID: 109523490}
+  - {fileID: 2048099155}
+  - {fileID: 1345262434}
+  - {fileID: 1953964520}
+  - {fileID: 1887492347}
+  - {fileID: 283574776}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &208212963
 GameObject:
   m_ObjectHideFlags: 0
@@ -5045,6 +5211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 249823858}
   - component: {fileID: 249823857}
+  - component: {fileID: 249823859}
   m_Layer: 0
   m_Name: GreenPieceA
   m_TagString: Untagged
@@ -5110,12 +5277,94 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249823856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.93, y: -4.29, z: 0}
+  m_LocalPosition: {x: -5.96, y: -2.1, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &249823859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249823856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 285314058}
+  - {fileID: 263628638}
+  - {fileID: 494921383}
+  - {fileID: 2088726282}
+  - {fileID: 1301130577}
+  - {fileID: 198079852}
+  - {fileID: 1344564909}
+  - {fileID: 1658461449}
+  - {fileID: 557009650}
+  - {fileID: 891455895}
+  - {fileID: 2004973728}
+  - {fileID: 1235573825}
+  - {fileID: 1523930934}
+  - {fileID: 1623209126}
+  - {fileID: 1859995615}
+  - {fileID: 569892649}
+  - {fileID: 536074417}
+  - {fileID: 1306451051}
+  - {fileID: 1873280650}
+  - {fileID: 1037200858}
+  - {fileID: 2140531881}
+  - {fileID: 41894797}
+  - {fileID: 126417246}
+  - {fileID: 920830927}
+  - {fileID: 1405867288}
+  - {fileID: 483441478}
+  - {fileID: 1953527277}
+  - {fileID: 930760675}
+  - {fileID: 1392001643}
+  - {fileID: 1655022557}
+  - {fileID: 1779043134}
+  - {fileID: 1986788407}
+  - {fileID: 975856613}
+  - {fileID: 429896218}
+  - {fileID: 2129697485}
+  - {fileID: 160120089}
+  - {fileID: 1107955146}
+  - {fileID: 847397702}
+  - {fileID: 158197555}
+  - {fileID: 777798684}
+  - {fileID: 1583222141}
+  - {fileID: 176541766}
+  - {fileID: 714524579}
+  - {fileID: 186108743}
+  - {fileID: 118118903}
+  - {fileID: 1682468510}
+  - {fileID: 1236607547}
+  - {fileID: 1863036726}
+  - {fileID: 611746360}
+  - {fileID: 832398631}
+  - {fileID: 200508496}
+  - {fileID: 527814515}
+  - {fileID: 948296826}
+  - {fileID: 722674182}
+  - {fileID: 2027325474}
+  - {fileID: 1962810313}
+  - {fileID: 765828308}
+  - {fileID: 1854077919}
+  - {fileID: 1962684244}
+  - {fileID: 1908359084}
+  - {fileID: 2002262049}
+  - {fileID: 1015527103}
+  - {fileID: 2045672627}
+  - {fileID: 1024660570}
+  - {fileID: 1674939218}
+  - {fileID: 1466526158}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &249967205
 GameObject:
   m_ObjectHideFlags: 0
@@ -5937,7 +6186,7 @@ MonoBehaviour:
   - {fileID: 2062583294}
   - {fileID: 422340945}
   - {fileID: 2029365950}
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &304222149
@@ -6190,6 +6439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 335808523}
   - component: {fileID: 335808522}
+  - component: {fileID: 335808524}
   m_Layer: 0
   m_Name: GreenPieceB
   m_TagString: Untagged
@@ -6261,6 +6511,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &335808524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335808521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 24985200}
+  - {fileID: 1208575896}
+  - {fileID: 1428996561}
+  - {fileID: 1425042458}
+  - {fileID: 624565516}
+  - {fileID: 1830478983}
+  - {fileID: 924741205}
+  - {fileID: 751642059}
+  - {fileID: 373535751}
+  - {fileID: 588933614}
+  - {fileID: 701895138}
+  - {fileID: 1263249670}
+  - {fileID: 1053767888}
+  - {fileID: 477700343}
+  - {fileID: 1877084112}
+  - {fileID: 196045288}
+  - {fileID: 1379303419}
+  - {fileID: 2120337457}
+  - {fileID: 1521750973}
+  - {fileID: 18113830}
+  - {fileID: 1715792139}
+  - {fileID: 1049992230}
+  - {fileID: 1092523232}
+  - {fileID: 785869719}
+  - {fileID: 1057927375}
+  - {fileID: 2101272910}
+  - {fileID: 147267483}
+  - {fileID: 1004333372}
+  - {fileID: 1511947616}
+  - {fileID: 261036291}
+  - {fileID: 2010032400}
+  - {fileID: 1085977377}
+  - {fileID: 502314318}
+  - {fileID: 742113098}
+  - {fileID: 369613215}
+  - {fileID: 849202722}
+  - {fileID: 2042195324}
+  - {fileID: 591791628}
+  - {fileID: 1822259144}
+  - {fileID: 1578228302}
+  - {fileID: 2031735929}
+  - {fileID: 408427594}
+  - {fileID: 1595567673}
+  - {fileID: 434884105}
+  - {fileID: 385194139}
+  - {fileID: 1865993611}
+  - {fileID: 554326503}
+  - {fileID: 1996662183}
+  - {fileID: 1890857475}
+  - {fileID: 779653341}
+  - {fileID: 1736244949}
+  - {fileID: 473635572}
+  - {fileID: 1475246244}
+  - {fileID: 975677229}
+  - {fileID: 163472537}
+  - {fileID: 1082554439}
+  - {fileID: 1360750519}
+  - {fileID: 1504520124}
+  - {fileID: 2040377924}
+  - {fileID: 1875467097}
+  - {fileID: 1134339578}
+  - {fileID: 2056599309}
+  - {fileID: 33371992}
+  - {fileID: 1690493273}
+  - {fileID: 1350458870}
+  - {fileID: 1004208713}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &339995438
 GameObject:
   m_ObjectHideFlags: 0
@@ -7267,6 +7599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412480975}
   - component: {fileID: 412480974}
+  - component: {fileID: 412480976}
   m_Layer: 0
   m_Name: GreenPieceC
   m_TagString: Untagged
@@ -7338,6 +7671,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &412480976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412480973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1290285446}
+  - {fileID: 2124985886}
+  - {fileID: 1821723156}
+  - {fileID: 295212614}
+  - {fileID: 174734232}
+  - {fileID: 892780793}
+  - {fileID: 1488264864}
+  - {fileID: 371490930}
+  - {fileID: 7922195}
+  - {fileID: 490294064}
+  - {fileID: 649237479}
+  - {fileID: 412915134}
+  - {fileID: 921484496}
+  - {fileID: 1650053373}
+  - {fileID: 1653663686}
+  - {fileID: 1381715701}
+  - {fileID: 1040214019}
+  - {fileID: 2028483787}
+  - {fileID: 1064306134}
+  - {fileID: 911607720}
+  - {fileID: 1663201921}
+  - {fileID: 2005647858}
+  - {fileID: 1687551196}
+  - {fileID: 78659985}
+  - {fileID: 1905890865}
+  - {fileID: 1606537497}
+  - {fileID: 1507467776}
+  - {fileID: 1951529333}
+  - {fileID: 1057652699}
+  - {fileID: 2075368219}
+  - {fileID: 1814525614}
+  - {fileID: 1473975592}
+  - {fileID: 1401098496}
+  - {fileID: 1631147526}
+  - {fileID: 1232624825}
+  - {fileID: 2103752948}
+  - {fileID: 1489840023}
+  - {fileID: 1362656703}
+  - {fileID: 2043714705}
+  - {fileID: 1653086552}
+  - {fileID: 759992246}
+  - {fileID: 285599522}
+  - {fileID: 988910671}
+  - {fileID: 261965239}
+  - {fileID: 2104185851}
+  - {fileID: 1023741176}
+  - {fileID: 1390693259}
+  - {fileID: 1401270598}
+  - {fileID: 1892877790}
+  - {fileID: 699278347}
+  - {fileID: 833467715}
+  - {fileID: 2036317177}
+  - {fileID: 1867082847}
+  - {fileID: 1745552838}
+  - {fileID: 1672685565}
+  - {fileID: 659511671}
+  - {fileID: 1726048818}
+  - {fileID: 2025226841}
+  - {fileID: 256560652}
+  - {fileID: 677339598}
+  - {fileID: 756478367}
+  - {fileID: 449448677}
+  - {fileID: 271780820}
+  - {fileID: 2117861417}
+  - {fileID: 2066373133}
+  - {fileID: 1215103530}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &412915133
 GameObject:
   m_ObjectHideFlags: 0
@@ -11154,6 +11569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 665608640}
   - component: {fileID: 665608639}
+  - component: {fileID: 665608641}
   m_Layer: 0
   m_Name: RedPieceD
   m_TagString: Untagged
@@ -11225,6 +11641,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &665608641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665608638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 114936335}
+  - {fileID: 1077703413}
+  - {fileID: 304222150}
+  - {fileID: 1302102338}
+  - {fileID: 1461633126}
+  - {fileID: 578150512}
+  - {fileID: 842887300}
+  - {fileID: 1834885207}
+  - {fileID: 1825574897}
+  - {fileID: 82274725}
+  - {fileID: 695532047}
+  - {fileID: 874971988}
+  - {fileID: 1028115}
+  - {fileID: 1151251335}
+  - {fileID: 715641950}
+  - {fileID: 1564210162}
+  - {fileID: 1514198504}
+  - {fileID: 1838737749}
+  - {fileID: 1738657146}
+  - {fileID: 137783636}
+  - {fileID: 95988440}
+  - {fileID: 1806935894}
+  - {fileID: 39404730}
+  - {fileID: 925445410}
+  - {fileID: 278918685}
+  - {fileID: 170438246}
+  - {fileID: 1865791797}
+  - {fileID: 1046287547}
+  - {fileID: 904674368}
+  - {fileID: 1071470533}
+  - {fileID: 1868540601}
+  - {fileID: 48354219}
+  - {fileID: 1706806471}
+  - {fileID: 1383357979}
+  - {fileID: 1436774204}
+  - {fileID: 2039426663}
+  - {fileID: 2036932918}
+  - {fileID: 657313705}
+  - {fileID: 1472965310}
+  - {fileID: 649484310}
+  - {fileID: 1593387254}
+  - {fileID: 685122654}
+  - {fileID: 929053134}
+  - {fileID: 1514925101}
+  - {fileID: 551061961}
+  - {fileID: 1348200672}
+  - {fileID: 257460458}
+  - {fileID: 1490777319}
+  - {fileID: 2133440609}
+  - {fileID: 36434628}
+  - {fileID: 228292525}
+  - {fileID: 362138035}
+  - {fileID: 2087255413}
+  - {fileID: 1512267600}
+  - {fileID: 2028504092}
+  - {fileID: 105063505}
+  - {fileID: 1670414108}
+  - {fileID: 151451513}
+  - {fileID: 179874350}
+  - {fileID: 1139017968}
+  - {fileID: 1733847222}
+  - {fileID: 1268077829}
+  - {fileID: 1134712330}
+  - {fileID: 1956797325}
+  - {fileID: 105779313}
+  - {fileID: 404154795}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &669929747
 GameObject:
   m_ObjectHideFlags: 0
@@ -14391,6 +14889,7 @@ GameObject:
   m_Component:
   - component: {fileID: 875270571}
   - component: {fileID: 875270570}
+  - component: {fileID: 875270572}
   m_Layer: 0
   m_Name: YellowPieceC
   m_TagString: Untagged
@@ -14462,6 +14961,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &875270572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875270569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1381806191}
+  - {fileID: 620251309}
+  - {fileID: 1206067625}
+  - {fileID: 1237559770}
+  - {fileID: 1498985764}
+  - {fileID: 1900352369}
+  - {fileID: 1147373089}
+  - {fileID: 941403920}
+  - {fileID: 1202849613}
+  - {fileID: 813563368}
+  - {fileID: 159787214}
+  - {fileID: 121896183}
+  - {fileID: 1092005963}
+  - {fileID: 482224428}
+  - {fileID: 2038602865}
+  - {fileID: 516469259}
+  - {fileID: 487163685}
+  - {fileID: 512303902}
+  - {fileID: 213760897}
+  - {fileID: 811470538}
+  - {fileID: 1477595199}
+  - {fileID: 717405959}
+  - {fileID: 204350819}
+  - {fileID: 1888487547}
+  - {fileID: 870216464}
+  - {fileID: 209496464}
+  - {fileID: 260809632}
+  - {fileID: 1943356411}
+  - {fileID: 1686438143}
+  - {fileID: 721192318}
+  - {fileID: 13158691}
+  - {fileID: 1348625266}
+  - {fileID: 911311020}
+  - {fileID: 464609490}
+  - {fileID: 1483859657}
+  - {fileID: 1238483013}
+  - {fileID: 1809177019}
+  - {fileID: 245498596}
+  - {fileID: 1906701380}
+  - {fileID: 173386306}
+  - {fileID: 1674681338}
+  - {fileID: 1400899786}
+  - {fileID: 1761849564}
+  - {fileID: 1701141445}
+  - {fileID: 672137570}
+  - {fileID: 799852721}
+  - {fileID: 469757176}
+  - {fileID: 112477984}
+  - {fileID: 695196368}
+  - {fileID: 949886782}
+  - {fileID: 1383678514}
+  - {fileID: 63676779}
+  - {fileID: 591480293}
+  - {fileID: 1698597394}
+  - {fileID: 790008460}
+  - {fileID: 1407708255}
+  - {fileID: 1838228537}
+  - {fileID: 249234378}
+  - {fileID: 1564264940}
+  - {fileID: 769737909}
+  - {fileID: 1815567592}
+  - {fileID: 208212964}
+  - {fileID: 1967917750}
+  - {fileID: 783417240}
+  - {fileID: 1501020683}
+  - {fileID: 229871267}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &880456881
 GameObject:
   m_ObjectHideFlags: 0
@@ -15762,8 +16343,9 @@ GameObject:
   m_Component:
   - component: {fileID: 945346542}
   - component: {fileID: 945346541}
+  - component: {fileID: 945346543}
   m_Layer: 0
-  m_Name: BluePieceC
+  m_Name: BluePieceD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15833,127 +16415,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &947651585
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 947651589}
-  - component: {fileID: 947651588}
-  - component: {fileID: 947651587}
-  - component: {fileID: 947651586}
-  m_Layer: 0
-  m_Name: Dice
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &947651586
+--- !u!114 &945346543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947651585}
+  m_GameObject: {fileID: 945346540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dfe8dd7b93cf42a48c825065bb0b30e, type: 3}
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &947651587
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947651585}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.64, y: 3.64}
-    newSize: {x: 3.64, y: 3.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.64, y: 3.64}
-  m_EdgeRadius: 0
---- !u!212 &947651588
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947651585}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 8b088f70b4971814f9ed189727eb2dea, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.64, y: 3.64}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &947651589
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947651585}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4, y: 0.88, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  waypoints:
+  - {fileID: 1496325198}
+  - {fileID: 532636012}
+  - {fileID: 513498070}
+  - {fileID: 1729821573}
+  - {fileID: 563561706}
+  - {fileID: 903570185}
+  - {fileID: 688933934}
+  - {fileID: 570379504}
+  - {fileID: 1810128605}
+  - {fileID: 833874281}
+  - {fileID: 492411495}
+  - {fileID: 1461573968}
+  - {fileID: 1606613781}
+  - {fileID: 976793523}
+  - {fileID: 1172737549}
+  - {fileID: 1600386376}
+  - {fileID: 473667064}
+  - {fileID: 1780071593}
+  - {fileID: 894529893}
+  - {fileID: 2035715920}
+  - {fileID: 1971690787}
+  - {fileID: 55235017}
+  - {fileID: 1991321372}
+  - {fileID: 1603386627}
+  - {fileID: 928252912}
+  - {fileID: 1762349569}
+  - {fileID: 814267088}
+  - {fileID: 1086115451}
+  - {fileID: 805450122}
+  - {fileID: 1787863360}
+  - {fileID: 976002291}
+  - {fileID: 165958284}
+  - {fileID: 810708942}
+  - {fileID: 953589785}
+  - {fileID: 1597769821}
+  - {fileID: 457711616}
+  - {fileID: 1078595365}
+  - {fileID: 1803262663}
+  - {fileID: 410489328}
+  - {fileID: 1590526029}
+  - {fileID: 499958690}
+  - {fileID: 779322171}
+  - {fileID: 184945246}
+  - {fileID: 677716868}
+  - {fileID: 184658989}
+  - {fileID: 228327698}
+  - {fileID: 671974571}
+  - {fileID: 281822866}
+  - {fileID: 498772851}
+  - {fileID: 102713607}
+  - {fileID: 457267391}
+  - {fileID: 490671337}
+  - {fileID: 1404577651}
+  - {fileID: 1804779628}
+  - {fileID: 1623706186}
+  - {fileID: 83887498}
+  - {fileID: 443505310}
+  - {fileID: 1899809542}
+  - {fileID: 69349166}
+  - {fileID: 1533895454}
+  - {fileID: 1483547363}
+  - {fileID: 59335370}
+  - {fileID: 1515058348}
+  - {fileID: 804829686}
+  - {fileID: 107002116}
+  - {fileID: 906757497}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &947673749
 GameObject:
   m_ObjectHideFlags: 0
@@ -16940,6 +17483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1023129283}
   - component: {fileID: 1023129282}
+  - component: {fileID: 1023129284}
   m_Layer: 0
   m_Name: RedPieceC
   m_TagString: Untagged
@@ -17011,6 +17555,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1023129284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023129281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 709702931}
+  - {fileID: 1405928646}
+  - {fileID: 2096374603}
+  - {fileID: 1273902244}
+  - {fileID: 1252297492}
+  - {fileID: 1406847811}
+  - {fileID: 481495604}
+  - {fileID: 943337421}
+  - {fileID: 1360796958}
+  - {fileID: 1431268266}
+  - {fileID: 800986060}
+  - {fileID: 868880644}
+  - {fileID: 121930849}
+  - {fileID: 61965847}
+  - {fileID: 939977083}
+  - {fileID: 240922900}
+  - {fileID: 356799165}
+  - {fileID: 1638632150}
+  - {fileID: 401594787}
+  - {fileID: 1096335359}
+  - {fileID: 1511947655}
+  - {fileID: 779572732}
+  - {fileID: 989453620}
+  - {fileID: 101618215}
+  - {fileID: 1283748612}
+  - {fileID: 1004482281}
+  - {fileID: 2083836503}
+  - {fileID: 2071353342}
+  - {fileID: 1839889320}
+  - {fileID: 2021040980}
+  - {fileID: 1239572584}
+  - {fileID: 1313843970}
+  - {fileID: 1112012516}
+  - {fileID: 1389968110}
+  - {fileID: 1611985263}
+  - {fileID: 1749424259}
+  - {fileID: 467558155}
+  - {fileID: 1392308018}
+  - {fileID: 159454244}
+  - {fileID: 1706964188}
+  - {fileID: 1571690482}
+  - {fileID: 1711291404}
+  - {fileID: 249967206}
+  - {fileID: 357262713}
+  - {fileID: 480483473}
+  - {fileID: 533062597}
+  - {fileID: 162830314}
+  - {fileID: 143373473}
+  - {fileID: 1869916407}
+  - {fileID: 125537059}
+  - {fileID: 923366734}
+  - {fileID: 257932792}
+  - {fileID: 449662431}
+  - {fileID: 1913558496}
+  - {fileID: 954632090}
+  - {fileID: 1541632312}
+  - {fileID: 1880588772}
+  - {fileID: 289454066}
+  - {fileID: 1573903519}
+  - {fileID: 423465599}
+  - {fileID: 1279599133}
+  - {fileID: 675573493}
+  - {fileID: 2020888498}
+  - {fileID: 133312409}
+  - {fileID: 1182862164}
+  - {fileID: 643061574}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &1023460640
 GameObject:
   m_ObjectHideFlags: 0
@@ -17231,6 +17857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1034942246}
   - component: {fileID: 1034942245}
+  - component: {fileID: 1034942247}
   m_Layer: 0
   m_Name: GreenPieceD
   m_TagString: Untagged
@@ -17296,12 +17923,94 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034942244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.87, y: -2.1099997, z: 0}
+  m_LocalPosition: {x: -5.98, y: -4.24, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1034942247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034942244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 994979838}
+  - {fileID: 1110643180}
+  - {fileID: 156236055}
+  - {fileID: 1158872421}
+  - {fileID: 109132309}
+  - {fileID: 2064715438}
+  - {fileID: 75789252}
+  - {fileID: 1741625714}
+  - {fileID: 1189826913}
+  - {fileID: 1282654850}
+  - {fileID: 1106302563}
+  - {fileID: 1855273429}
+  - {fileID: 1028797764}
+  - {fileID: 764645054}
+  - {fileID: 975381560}
+  - {fileID: 1087433914}
+  - {fileID: 1354371334}
+  - {fileID: 940491648}
+  - {fileID: 803415438}
+  - {fileID: 1524916245}
+  - {fileID: 1934809309}
+  - {fileID: 1371513996}
+  - {fileID: 1905995023}
+  - {fileID: 1981463304}
+  - {fileID: 2046150549}
+  - {fileID: 630171394}
+  - {fileID: 493995523}
+  - {fileID: 1418252592}
+  - {fileID: 1475005981}
+  - {fileID: 1622035771}
+  - {fileID: 989004954}
+  - {fileID: 2059726309}
+  - {fileID: 2055211173}
+  - {fileID: 1923350684}
+  - {fileID: 87461694}
+  - {fileID: 72208214}
+  - {fileID: 331540210}
+  - {fileID: 2084288029}
+  - {fileID: 1734736015}
+  - {fileID: 1471028714}
+  - {fileID: 1143325161}
+  - {fileID: 238254313}
+  - {fileID: 1561047975}
+  - {fileID: 917023982}
+  - {fileID: 1650203895}
+  - {fileID: 1539143727}
+  - {fileID: 1860827697}
+  - {fileID: 150670691}
+  - {fileID: 1167648679}
+  - {fileID: 2114355822}
+  - {fileID: 1011188579}
+  - {fileID: 1250494535}
+  - {fileID: 766291265}
+  - {fileID: 477789834}
+  - {fileID: 1929145379}
+  - {fileID: 1350812431}
+  - {fileID: 156476526}
+  - {fileID: 1205806972}
+  - {fileID: 2095510037}
+  - {fileID: 1829267224}
+  - {fileID: 179688344}
+  - {fileID: 118078896}
+  - {fileID: 556523784}
+  - {fileID: 92823898}
+  - {fileID: 403690118}
+  - {fileID: 457515717}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &1037200857
 GameObject:
   m_ObjectHideFlags: 0
@@ -18485,6 +19194,127 @@ Transform:
   m_Father: {fileID: 819715488}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1106593430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106593434}
+  - component: {fileID: 1106593433}
+  - component: {fileID: 1106593432}
+  - component: {fileID: 1106593431}
+  m_Layer: 0
+  m_Name: Dice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1106593431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106593430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dfe8dd7b93cf42a48c825065bb0b30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1106593432
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106593430}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.64, y: 3.64}
+    newSize: {x: 3.64, y: 3.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.64, y: 3.64}
+  m_EdgeRadius: 0
+--- !u!212 &1106593433
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106593430}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 8b088f70b4971814f9ed189727eb2dea, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.64, y: 3.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1106593434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106593430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.51, y: 0.88, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107955145
 GameObject:
   m_ObjectHideFlags: 0
@@ -19563,6 +20393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1180673308}
   - component: {fileID: 1180673307}
+  - component: {fileID: 1180673309}
   m_Layer: 0
   m_Name: YellowPieceB
   m_TagString: Untagged
@@ -19634,6 +20465,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180673309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180673306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1244106866}
+  - {fileID: 330876796}
+  - {fileID: 318246043}
+  - {fileID: 1282686666}
+  - {fileID: 1452335120}
+  - {fileID: 1815330702}
+  - {fileID: 1434017758}
+  - {fileID: 2029680877}
+  - {fileID: 2041746092}
+  - {fileID: 88628741}
+  - {fileID: 573978692}
+  - {fileID: 1459525913}
+  - {fileID: 940742795}
+  - {fileID: 1892250165}
+  - {fileID: 195410226}
+  - {fileID: 1082788513}
+  - {fileID: 669929748}
+  - {fileID: 1822962682}
+  - {fileID: 1199928759}
+  - {fileID: 2068428464}
+  - {fileID: 788189850}
+  - {fileID: 889720023}
+  - {fileID: 862722634}
+  - {fileID: 19737181}
+  - {fileID: 714640666}
+  - {fileID: 2145392143}
+  - {fileID: 1207687922}
+  - {fileID: 420694692}
+  - {fileID: 805838218}
+  - {fileID: 1457116343}
+  - {fileID: 1851645653}
+  - {fileID: 1330747368}
+  - {fileID: 365500004}
+  - {fileID: 1082809776}
+  - {fileID: 1391061115}
+  - {fileID: 2133091606}
+  - {fileID: 1283807920}
+  - {fileID: 221039379}
+  - {fileID: 1542259624}
+  - {fileID: 1458455824}
+  - {fileID: 980367256}
+  - {fileID: 827501852}
+  - {fileID: 176647713}
+  - {fileID: 1561023031}
+  - {fileID: 1366440831}
+  - {fileID: 2102540893}
+  - {fileID: 29062834}
+  - {fileID: 639973730}
+  - {fileID: 190039787}
+  - {fileID: 1791611091}
+  - {fileID: 721398467}
+  - {fileID: 146241269}
+  - {fileID: 2145700688}
+  - {fileID: 2079522672}
+  - {fileID: 404104138}
+  - {fileID: 576192799}
+  - {fileID: 1192719515}
+  - {fileID: 1477055485}
+  - {fileID: 206849813}
+  - {fileID: 1964712388}
+  - {fileID: 135130802}
+  - {fileID: 588842681}
+  - {fileID: 1868492128}
+  - {fileID: 1831422637}
+  - {fileID: 141706178}
+  - {fileID: 320049318}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &1182862163
 GameObject:
   m_ObjectHideFlags: 0
@@ -27439,7 +28352,7 @@ MonoBehaviour:
   - {fileID: 1777054162}
   - {fileID: 1548212580}
   - {fileID: 2080928911}
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &1653086551
@@ -28598,6 +29511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1734602694}
   - component: {fileID: 1734602693}
+  - component: {fileID: 1734602695}
   m_Layer: 0
   m_Name: RedPieceB
   m_TagString: Untagged
@@ -28669,6 +29583,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1734602695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734602692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1075012278}
+  - {fileID: 88491641}
+  - {fileID: 453192642}
+  - {fileID: 1117039334}
+  - {fileID: 862617546}
+  - {fileID: 1525570071}
+  - {fileID: 627560083}
+  - {fileID: 1585758163}
+  - {fileID: 1275056678}
+  - {fileID: 529125309}
+  - {fileID: 394710925}
+  - {fileID: 1857707623}
+  - {fileID: 177539876}
+  - {fileID: 1977696779}
+  - {fileID: 83101040}
+  - {fileID: 1226295389}
+  - {fileID: 960438049}
+  - {fileID: 1705684042}
+  - {fileID: 1746681257}
+  - {fileID: 1979926930}
+  - {fileID: 909479139}
+  - {fileID: 1623533701}
+  - {fileID: 831437874}
+  - {fileID: 166493287}
+  - {fileID: 1686480382}
+  - {fileID: 139157776}
+  - {fileID: 2065002244}
+  - {fileID: 680007188}
+  - {fileID: 1730899878}
+  - {fileID: 131453692}
+  - {fileID: 405890894}
+  - {fileID: 1449399999}
+  - {fileID: 1256390904}
+  - {fileID: 1064679638}
+  - {fileID: 766453022}
+  - {fileID: 1031778457}
+  - {fileID: 548883982}
+  - {fileID: 374473951}
+  - {fileID: 483476719}
+  - {fileID: 1795794718}
+  - {fileID: 206483923}
+  - {fileID: 564905822}
+  - {fileID: 461980545}
+  - {fileID: 1047552204}
+  - {fileID: 2001613235}
+  - {fileID: 2076301733}
+  - {fileID: 67534457}
+  - {fileID: 937845605}
+  - {fileID: 423710258}
+  - {fileID: 1128977485}
+  - {fileID: 728938936}
+  - {fileID: 1046692557}
+  - {fileID: 1839884048}
+  - {fileID: 1750478632}
+  - {fileID: 1137283764}
+  - {fileID: 1475311001}
+  - {fileID: 220121929}
+  - {fileID: 1358974341}
+  - {fileID: 1469722065}
+  - {fileID: 626458709}
+  - {fileID: 1591507882}
+  - {fileID: 618806826}
+  - {fileID: 1264033839}
+  - {fileID: 1727167703}
+  - {fileID: 389659886}
+  - {fileID: 1513371046}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &1734736014
 GameObject:
   m_ObjectHideFlags: 0
@@ -29309,8 +30305,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1776678453}
   - component: {fileID: 1776678452}
+  - component: {fileID: 1776678454}
   m_Layer: 0
-  m_Name: BluePieceA
+  m_Name: BluePieceB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29380,6 +30377,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1776678454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776678451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 618780363}
+  - {fileID: 262570894}
+  - {fileID: 183288414}
+  - {fileID: 1332908509}
+  - {fileID: 1347106002}
+  - {fileID: 883256122}
+  - {fileID: 1126639958}
+  - {fileID: 1504899295}
+  - {fileID: 762634347}
+  - {fileID: 439295981}
+  - {fileID: 34495100}
+  - {fileID: 1475351140}
+  - {fileID: 1611496995}
+  - {fileID: 1555687268}
+  - {fileID: 1615382550}
+  - {fileID: 1938904629}
+  - {fileID: 546020864}
+  - {fileID: 1840419427}
+  - {fileID: 3155568}
+  - {fileID: 872005187}
+  - {fileID: 447600606}
+  - {fileID: 1218887487}
+  - {fileID: 622410690}
+  - {fileID: 519018651}
+  - {fileID: 1967774701}
+  - {fileID: 1874635606}
+  - {fileID: 1803716793}
+  - {fileID: 1446826724}
+  - {fileID: 1124905911}
+  - {fileID: 1380708578}
+  - {fileID: 1526212326}
+  - {fileID: 926513942}
+  - {fileID: 127156457}
+  - {fileID: 863182751}
+  - {fileID: 1062635048}
+  - {fileID: 584463912}
+  - {fileID: 55116215}
+  - {fileID: 682764196}
+  - {fileID: 1013099943}
+  - {fileID: 1591056829}
+  - {fileID: 444008079}
+  - {fileID: 1232036154}
+  - {fileID: 356532534}
+  - {fileID: 41054011}
+  - {fileID: 702851199}
+  - {fileID: 1455788898}
+  - {fileID: 2137761258}
+  - {fileID: 1484988355}
+  - {fileID: 217502854}
+  - {fileID: 1367908174}
+  - {fileID: 102247529}
+  - {fileID: 235831337}
+  - {fileID: 381766844}
+  - {fileID: 1864051757}
+  - {fileID: 1334146970}
+  - {fileID: 1892480846}
+  - {fileID: 780015756}
+  - {fileID: 2065489105}
+  - {fileID: 1562013255}
+  - {fileID: 1831288875}
+  - {fileID: 1079460638}
+  - {fileID: 2042514951}
+  - {fileID: 1617364043}
+  - {fileID: 19730821}
+  - {fileID: 381583596}
+  - {fileID: 1290297516}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &1777054161
 GameObject:
   m_ObjectHideFlags: 0
@@ -29510,8 +30589,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1787664075}
   - component: {fileID: 1787664074}
+  - component: {fileID: 1787664076}
   m_Layer: 0
-  m_Name: BluePieceD
+  m_Name: BluePieceA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29581,6 +30661,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787664076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787664073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89208ddcad62495380e87892f257aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 212960238}
+  - {fileID: 2047180718}
+  - {fileID: 1201961728}
+  - {fileID: 243336660}
+  - {fileID: 1183936384}
+  - {fileID: 6967979}
+  - {fileID: 1450344500}
+  - {fileID: 1781670895}
+  - {fileID: 1507597151}
+  - {fileID: 362784282}
+  - {fileID: 237501173}
+  - {fileID: 1054447734}
+  - {fileID: 1553196597}
+  - {fileID: 144751588}
+  - {fileID: 136032852}
+  - {fileID: 1315057999}
+  - {fileID: 969412766}
+  - {fileID: 1745747806}
+  - {fileID: 810489031}
+  - {fileID: 681794354}
+  - {fileID: 1762213}
+  - {fileID: 1891290234}
+  - {fileID: 607561950}
+  - {fileID: 359743336}
+  - {fileID: 914660179}
+  - {fileID: 2145736715}
+  - {fileID: 1798591578}
+  - {fileID: 1166965075}
+  - {fileID: 1221982437}
+  - {fileID: 520017698}
+  - {fileID: 31547358}
+  - {fileID: 1463255568}
+  - {fileID: 374118737}
+  - {fileID: 433576185}
+  - {fileID: 1756362266}
+  - {fileID: 722380900}
+  - {fileID: 867442854}
+  - {fileID: 2113526359}
+  - {fileID: 1532415430}
+  - {fileID: 442406357}
+  - {fileID: 1687016944}
+  - {fileID: 1997255190}
+  - {fileID: 1462287876}
+  - {fileID: 1020208049}
+  - {fileID: 191100667}
+  - {fileID: 53371018}
+  - {fileID: 2010762050}
+  - {fileID: 2025142548}
+  - {fileID: 827992805}
+  - {fileID: 1266823075}
+  - {fileID: 369218423}
+  - {fileID: 826601788}
+  - {fileID: 1922734314}
+  - {fileID: 1792047092}
+  - {fileID: 225858897}
+  - {fileID: 1357923863}
+  - {fileID: 427565833}
+  - {fileID: 289678289}
+  - {fileID: 1090105817}
+  - {fileID: 786768738}
+  - {fileID: 2137839850}
+  - {fileID: 51874982}
+  - {fileID: 488480243}
+  - {fileID: 1282964355}
+  - {fileID: 140036113}
+  - {fileID: 966515317}
+  moveSpeed: 5
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &1787863359
 GameObject:
   m_ObjectHideFlags: 0
