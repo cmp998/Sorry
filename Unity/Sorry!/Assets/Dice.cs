@@ -1,19 +1,29 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Dice : MonoBehaviour {
+public class Dice : MonoBehaviour
+{
 
     private Sprite[] diceSides;
     private SpriteRenderer rend;
     private int whosTurn = 1;
     private bool coroutineAllowed = true;
 
-	// Use this for initialization
-	private void Start () {
+    private KeyCode[] keyCodes = {
+         KeyCode.Alpha1,
+         KeyCode.Alpha2,
+         KeyCode.Alpha3,
+         KeyCode.Alpha4 };
+
+    int currPiece = 0;
+
+    // Use this for initialization
+    private void Start()
+    {
         rend = GetComponent<SpriteRenderer>();
-        diceSides = Resources.LoadAll<Sprite>("DiceSides/");
+        diceSides = Resources.LoadAll<Sprite>("CardFaces/");
         rend.sprite = diceSides[5];
-	}
+    }
 
     private void OnMouseDown()
     {
@@ -25,20 +35,33 @@ public class Dice : MonoBehaviour {
     {
         coroutineAllowed = false;
         int randomDiceSide = 0;
-        for (int i = 0; i <= 20; i++)
+        randomDiceSide = Random.Range(0, 12);
+        rend.sprite = diceSides[randomDiceSide];
+        yield return new WaitForSeconds(0.05f);
+
+        while (!Input.GetKeyDown(keyCodes[0]) && !Input.GetKeyDown(keyCodes[1]) && !Input.GetKeyDown(keyCodes[2]) && !Input.GetKeyDown(keyCodes[3])) //select your piece with keyboard
         {
-            randomDiceSide = Random.Range(0, 6);
-            rend.sprite = diceSides[randomDiceSide];
-            yield return new WaitForSeconds(0.05f);
+            Debug.Log("nope");
+            yield return null;
+        }
+
+        for (int i = 0; i < keyCodes.Length; i++) //sets which piece to move
+        {
+            Debug.Log(currPiece);
+            if (Input.GetKeyDown(keyCodes[i]))
+            {
+                currPiece = i;
+            }
         }
 
         GameControl.diceSideThrown = randomDiceSide + 1;
         if (whosTurn == 1)
         {
-            GameControl.MovePlayer(1);
-        } else if (whosTurn == -1)
+            GameControl.MovePlayer(1, currPiece);
+        }
+        else if (whosTurn == -1)
         {
-            GameControl.MovePlayer(2);
+            GameControl.MovePlayer(2, currPiece);
         }
         whosTurn *= -1;
         coroutineAllowed = true;
