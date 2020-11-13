@@ -17,12 +17,12 @@ public class MainMenu : MonoBehaviour
     public void ThreePlayers ()
     {
         numOfPlayers = 3;
-        PlayGame()
+        PlayGame();
     }
     public void FourPlayers ()
     {
         numOfPlayers = 4;
-        PlayGame()
+        PlayGame();
     }
     
 
