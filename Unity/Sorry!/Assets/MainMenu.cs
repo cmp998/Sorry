@@ -17,12 +17,12 @@ public class MainMenu : MonoBehaviour
     public void ThreePlayers ()
     {
         numOfPlayers = 3;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayGame()
     }
     public void FourPlayers ()
     {
         numOfPlayers = 4;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayGame()
     }
     
 
