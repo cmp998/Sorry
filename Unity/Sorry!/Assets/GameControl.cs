@@ -24,6 +24,9 @@ public class GameControl : MonoBehaviour
 
     public static bool gameOver = false;
 
+    //Default to all real players
+    public int numOfPlayers = 4;
+
 
     // Use this for initialization
     void Start()
@@ -32,7 +35,9 @@ public class GameControl : MonoBehaviour
         //whoWinsTextShadow = GameObject.Find("WhoWinsText");
         //player1MoveText = GameObject.Find("Player1MoveText");
         //player2MoveText = GameObject.Find("Player2MoveText");
-
+        
+        numOfPlayers = MainMenu.GetNumOfPlayers();
+        Debug.Log(numOfPlayers);
 
         player1 = GameObject.Find("RedPieceA");
         player2 = GameObject.Find("YellowPieceA");
