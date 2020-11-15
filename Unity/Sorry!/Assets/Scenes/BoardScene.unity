@@ -462,7 +462,7 @@ MonoBehaviour:
   - {fileID: 1602705003}
   - {fileID: 1432826921}
   - {fileID: 823162389}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &13158690
@@ -4478,7 +4478,7 @@ MonoBehaviour:
   - {fileID: 1953964520}
   - {fileID: 1887492347}
   - {fileID: 283574776}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &208212963
@@ -5362,7 +5362,7 @@ MonoBehaviour:
   - {fileID: 1024660570}
   - {fileID: 1674939218}
   - {fileID: 1466526158}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &249967205
@@ -6186,7 +6186,7 @@ MonoBehaviour:
   - {fileID: 2062583294}
   - {fileID: 422340945}
   - {fileID: 2029365950}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &304222149
@@ -6590,7 +6590,7 @@ MonoBehaviour:
   - {fileID: 1690493273}
   - {fileID: 1350458870}
   - {fileID: 1004208713}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &339995438
@@ -7750,7 +7750,7 @@ MonoBehaviour:
   - {fileID: 2117861417}
   - {fileID: 2066373133}
   - {fileID: 1215103530}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &412915133
@@ -11720,7 +11720,7 @@ MonoBehaviour:
   - {fileID: 1956797325}
   - {fileID: 105779313}
   - {fileID: 404154795}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &669929747
@@ -15040,7 +15040,7 @@ MonoBehaviour:
   - {fileID: 783417240}
   - {fileID: 1501020683}
   - {fileID: 229871267}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &880456881
@@ -16494,7 +16494,7 @@ MonoBehaviour:
   - {fileID: 804829686}
   - {fileID: 107002116}
   - {fileID: 906757497}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &947673749
@@ -17634,7 +17634,7 @@ MonoBehaviour:
   - {fileID: 133312409}
   - {fileID: 1182862164}
   - {fileID: 643061574}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &1023460640
@@ -18008,7 +18008,7 @@ MonoBehaviour:
   - {fileID: 92823898}
   - {fileID: 403690118}
   - {fileID: 457515717}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &1037200857
@@ -20545,7 +20545,7 @@ MonoBehaviour:
   - {fileID: 1831422637}
   - {fileID: 141706178}
   - {fileID: 320049318}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &1182862163
@@ -28353,7 +28353,7 @@ MonoBehaviour:
   - {fileID: 1777054162}
   - {fileID: 1548212580}
   - {fileID: 2080928911}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &1653086551
@@ -29663,7 +29663,7 @@ MonoBehaviour:
   - {fileID: 1727167703}
   - {fileID: 389659886}
   - {fileID: 1513371046}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &1734736014
@@ -30457,7 +30457,7 @@ MonoBehaviour:
   - {fileID: 19730821}
   - {fileID: 381583596}
   - {fileID: 1290297516}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &1777054161
@@ -30741,7 +30741,7 @@ MonoBehaviour:
   - {fileID: 1282964355}
   - {fileID: 140036113}
   - {fileID: 966515317}
-  moveSpeed: 5
+  moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
 --- !u!1 &1787863359

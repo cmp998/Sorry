@@ -110,38 +110,30 @@ public class GameControl : MonoBehaviour
             player4StartWaypoint[currPiece] = player4.GetComponent<FollowThePath>().waypointIndex - 1;
         }
 
-        // section checks for game over //
-        if ((player1StartWaypoint[0] == 65) && 
-            (player1StartWaypoint[1] == 65) && 
-            (player1StartWaypoint[2] == 65) && 
-            (player1StartWaypoint[3] == 65))
-        {
-            gameOver = true;
-        }
 
-        if ((player2StartWaypoint[0] == player2.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player2StartWaypoint[1] == player2.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player2StartWaypoint[2] == player2.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player2StartWaypoint[3] == player2.GetComponent<FollowThePath>().waypoints.Length - 1))
-        {
+        if ((GameObject.Find(player1Pieces[0]).transform.position == GameObject.Find("RedHomeA").transform.position) &&
+            (GameObject.Find(player1Pieces[1]).transform.position == GameObject.Find("RedHomeB").transform.position) &&
+            (GameObject.Find(player1Pieces[2]).transform.position == GameObject.Find("RedHomeC").transform.position) &&
+            (GameObject.Find(player1Pieces[3]).transform.position == GameObject.Find("RedHomeD").transform.position))
             gameOver = true;
-        }
 
-        if ((player3StartWaypoint[0] == player3.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player3StartWaypoint[1] == player3.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player3StartWaypoint[2] == player3.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player3StartWaypoint[3] == player3.GetComponent<FollowThePath>().waypoints.Length - 1))
-        {
+        if ((GameObject.Find(player2Pieces[0]).transform.position == GameObject.Find("BlueHomeA").transform.position) &&
+            (GameObject.Find(player2Pieces[1]).transform.position == GameObject.Find("BlueHomeB").transform.position) &&
+            (GameObject.Find(player2Pieces[2]).transform.position == GameObject.Find("BlueHomeC").transform.position) &&
+            (GameObject.Find(player2Pieces[3]).transform.position == GameObject.Find("BlueHomeD").transform.position))
             gameOver = true;
-        }
 
-        if ((player4StartWaypoint[0] == player4.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player4StartWaypoint[1] == player4.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player4StartWaypoint[2] == player4.GetComponent<FollowThePath>().waypoints.Length - 1) &&
-            (player4StartWaypoint[3] == player4.GetComponent<FollowThePath>().waypoints.Length - 1))
-        {
+        if ((GameObject.Find(player3Pieces[0]).transform.position == GameObject.Find("YellowHomeA").transform.position) &&
+            (GameObject.Find(player3Pieces[1]).transform.position == GameObject.Find("YellowHomeB").transform.position) &&
+            (GameObject.Find(player3Pieces[2]).transform.position == GameObject.Find("YellowHomeC").transform.position) &&
+            (GameObject.Find(player3Pieces[3]).transform.position == GameObject.Find("YellowHomeD").transform.position))
             gameOver = true;
-        }
+
+        if ((GameObject.Find(player4Pieces[0]).transform.position == GameObject.Find("GreenHomeA").transform.position) &&
+            (GameObject.Find(player4Pieces[1]).transform.position == GameObject.Find("GreenHomeB").transform.position) &&
+            (GameObject.Find(player4Pieces[2]).transform.position == GameObject.Find("GreenHomeC").transform.position) &&
+            (GameObject.Find(player4Pieces[3]).transform.position == GameObject.Find("GreenHomeD").transform.position))
+            gameOver = true;
         ///////////////////
     }
 
@@ -168,6 +160,7 @@ public class GameControl : MonoBehaviour
                 break;
 
             case 3:
+                Debug.Log("check");
                 player4 = GameObject.Find(player4Pieces[curr]);
                 player4.GetComponent<FollowThePath>().moveAllowed = true;
                 break;
