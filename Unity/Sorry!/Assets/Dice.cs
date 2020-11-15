@@ -100,8 +100,6 @@ public class Dice : MonoBehaviour
         if (GameObject.Find(players[whosTurn,currPiece]).transform.position == GameObject.Find(home).transform.position)
             {
 
-            Debug.Log("check");    
-
                 if (randomDiceSide == 0 || randomDiceSide == 1)
                 {
                     GameControl.diceSideThrown = randomDiceSide + 1;

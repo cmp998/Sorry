@@ -30,6 +30,9 @@ public class GameControl : MonoBehaviour
 
     public static bool gameOver = false;
 
+    public bool easyAI = false;
+    public bool hardAI = false;
+
     //Default to all real players
     public int numOfPlayers = 4;
     public int whosTurn = 0;
@@ -46,7 +49,6 @@ public class GameControl : MonoBehaviour
         RedMove = GameObject.Find("RedMove");
         
         numOfPlayers = MainMenu.GetNumOfPlayers();
-        Debug.Log("Number of Players:" + numOfPlayers);
 
         player1 = GameObject.Find("RedPieceA"); //default stuff
         player2 = GameObject.Find("BluePieceA");
