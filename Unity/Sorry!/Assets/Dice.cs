@@ -9,6 +9,8 @@ public class Dice : MonoBehaviour
     private static int whosTurn = 0;
     private bool coroutineAllowed = true;
 
+    private static bool easy = MainMenu.GetEasy();
+
     public static string[,] players = new string[,]{ { "RedPieceA", "RedPieceB", "RedPieceC", "RedPieceD" }, 
         { "BluePieceA", "BluePieceB", "BluePieceC", "BluePieceD" }, 
         { "YellowPieceA", "YellowPieceB", "YellowPieceC", "YellowPieceD" },
@@ -36,6 +38,8 @@ public class Dice : MonoBehaviour
     {
         if (!GameControl.gameOver && coroutineAllowed)
             StartCoroutine("RollTheDice");
+
+
     }
 
     private IEnumerator RollTheDice()
@@ -47,18 +51,26 @@ public class Dice : MonoBehaviour
         rend.sprite = diceSides[randomDiceSide];
         yield return new WaitForSeconds(0.05f);
 
-        while (!Input.GetKeyDown(keyCodes[0]) && !Input.GetKeyDown(keyCodes[1]) && !Input.GetKeyDown(keyCodes[2]) && !Input.GetKeyDown(keyCodes[3])) //select your piece with keyboard
+        if(easy && whosTurn == 1)
         {
-            yield return null;
+            currPiece = Random.Range(0, 4);
         }
-
-        for (int i = 0; i < keyCodes.Length; i++) //sets which piece to move
+        else
         {
-            if (Input.GetKeyDown(keyCodes[i]))
+            while (!Input.GetKeyDown(keyCodes[0]) && !Input.GetKeyDown(keyCodes[1]) && !Input.GetKeyDown(keyCodes[2]) && !Input.GetKeyDown(keyCodes[3])) //select your piece with keyboard
             {
-                currPiece = i;
+                yield return null;
+            }
+
+            for (int i = 0; i < keyCodes.Length; i++) //sets which piece to move
+            {
+                if (Input.GetKeyDown(keyCodes[i]))
+                {
+                    currPiece = i;
+                }
             }
         }
+
 
         string home = "";
         switch (whosTurn)
@@ -97,30 +109,50 @@ public class Dice : MonoBehaviour
         }
 
 
-        if (GameObject.Find(players[whosTurn,currPiece]).transform.position == GameObject.Find(home).transform.position)
+        if (GameObject.Find(players[whosTurn, currPiece]).transform.position == GameObject.Find(home).transform.position)
+        {
+
+            if (randomDiceSide == 0 || randomDiceSide == 1)
             {
+                GameControl.diceSideThrown = randomDiceSide + 1;
 
-                if (randomDiceSide == 0 || randomDiceSide == 1)
-                {
-                    GameControl.diceSideThrown = randomDiceSide + 1;
+                //Move player
+                GameControl.MovePlayer(whosTurn, currPiece);
 
-                    //Move player
-                    GameControl.MovePlayer(whosTurn, currPiece);
-                }
+                yield return new WaitForSeconds(1f);
             }
+            else
+            {
+                yield return new WaitForSeconds(1f);
+            }
+        }
         else
         {
             GameControl.diceSideThrown = randomDiceSide + 1;
 
             //Move player
             GameControl.MovePlayer(whosTurn, currPiece);
-        }
 
+            yield return new WaitForSeconds(1 + randomDiceSide / 4);
+        }
 
 
         whosTurn += 1;
         int numOfPlayers = MainMenu.GetNumOfPlayers();
         whosTurn = whosTurn % (numOfPlayers);
         coroutineAllowed = true;
+
+        yield return new WaitForSeconds(1f);
+
+        if (easy && whosTurn == 1)
+        {
+            yield return new WaitForSeconds(1f);
+            StartCoroutine("RollTheDice");
+            yield return new WaitForSeconds(2f);
+        }
+
+
     }
+
 }
+

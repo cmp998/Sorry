@@ -30,9 +30,6 @@ public class GameControl : MonoBehaviour
 
     public static bool gameOver = false;
 
-    public bool easyAI = false;
-    public bool hardAI = false;
-
     //Default to all real players
     public int numOfPlayers = 4;
     public int whosTurn = 0;
@@ -114,15 +111,10 @@ public class GameControl : MonoBehaviour
             }
         }
 
-        if (gameOver)
-            Debug.Log("done");
-
         player1 = GameObject.Find(player1Pieces[currPiece]);
         player2 = GameObject.Find(player2Pieces[currPiece]);
         player3 = GameObject.Find(player3Pieces[currPiece]);
         player4 = GameObject.Find(player4Pieces[currPiece]);
-
-
 
         if (player1.GetComponent<FollowThePath>().waypointIndex >
             player1StartWaypoint[currPiece] + diceSideThrown)
@@ -153,6 +145,7 @@ public class GameControl : MonoBehaviour
         }
 
 
+
         if ((GameObject.Find(player1Pieces[0]).transform.position == GameObject.Find("RedHomeA").transform.position) &&
             (GameObject.Find(player1Pieces[1]).transform.position == GameObject.Find("RedHomeB").transform.position) &&
             (GameObject.Find(player1Pieces[2]).transform.position == GameObject.Find("RedHomeC").transform.position) &&
@@ -176,7 +169,6 @@ public class GameControl : MonoBehaviour
             (GameObject.Find(player4Pieces[2]).transform.position == GameObject.Find("GreenHomeC").transform.position) &&
             (GameObject.Find(player4Pieces[3]).transform.position == GameObject.Find("GreenHomeD").transform.position))
             gameOver = true;
-        ///////////////////
     }
 
     public static void MovePlayer(int playerToMove, int curr)
@@ -202,7 +194,6 @@ public class GameControl : MonoBehaviour
                 break;
 
             case 3:
-                Debug.Log("check");
                 player4 = GameObject.Find(player4Pieces[curr]);
                 player4.GetComponent<FollowThePath>().moveAllowed = true;
                 break;
