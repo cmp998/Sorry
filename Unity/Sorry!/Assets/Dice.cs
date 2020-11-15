@@ -9,6 +9,11 @@ public class Dice : MonoBehaviour
     private int whosTurn = 0;
     private bool coroutineAllowed = true;
 
+    public static string[,] players = new string[,]{ { "RedPieceA", "RedPieceB", "RedPieceC", "RedPieceD" }, 
+        { "BluePieceA", "BluePieceB", "BluePieceC", "BluePieceD" }, 
+        { "YellowPieceA", "YellowPieceB", "YellowPieceC", "YellowPieceD" },
+        { "GreenPieceA", "GreenPieceB", "GreenPieceC", "GreenPieceD" } };
+
     private KeyCode[] keyCodes = {
          KeyCode.Alpha1,
          KeyCode.Alpha2,
@@ -33,6 +38,7 @@ public class Dice : MonoBehaviour
 
     private IEnumerator RollTheDice()
     {
+
         coroutineAllowed = false;
         int randomDiceSide = 0;
         randomDiceSide = Random.Range(0, 12);
@@ -52,10 +58,70 @@ public class Dice : MonoBehaviour
             }
         }
 
-        GameControl.diceSideThrown = randomDiceSide + 1;
+        string home = "";
+        switch (whosTurn)
+        {
+            case 0:
+                home += "Red";
+                break;
+            case 1:
+                home += "Blue";
+                break;
+            case 2:
+                home += "Yellow";
+                break;
+            case 3:
+                home += "Green";
+                break;
+        }
 
-        //Move player
-        GameControl.MovePlayer(whosTurn, currPiece);
+
+        home += "Start";
+
+        switch (currPiece)
+        {
+            case 0:
+                home += "A";
+                break;
+            case 1:
+                home += "B";
+                break;
+            case 2:
+                home += "C";
+                break;
+            case 3:
+                home += "D";
+                break;
+        }
+
+        //Debug.Log(GameObject.Find(players[whosTurn, currPiece]).transform.position);
+        //Debug.Log(GameObject.Find(home).transform.position);
+
+        Debug.Log(players[whosTurn, currPiece]);
+        Debug.Log(home);
+
+        if (GameObject.Find(players[whosTurn,currPiece]).transform.position == GameObject.Find(home).transform.position)
+            {
+
+            Debug.Log("check");    
+
+                if (randomDiceSide == 1 || randomDiceSide == 2)
+                {
+                    GameControl.diceSideThrown = randomDiceSide + 1;
+
+                    //Move player
+                    GameControl.MovePlayer(whosTurn, currPiece);
+                }
+            }
+        else
+        {
+            GameControl.diceSideThrown = randomDiceSide + 1;
+
+            //Move player
+            GameControl.MovePlayer(whosTurn, currPiece);
+        }
+
+
 
         whosTurn += 1;
         int numOfPlayers = MainMenu.GetNumOfPlayers();
