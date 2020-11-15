@@ -41,13 +41,11 @@ public class Dice : MonoBehaviour
 
         while (!Input.GetKeyDown(keyCodes[0]) && !Input.GetKeyDown(keyCodes[1]) && !Input.GetKeyDown(keyCodes[2]) && !Input.GetKeyDown(keyCodes[3])) //select your piece with keyboard
         {
-            //Debug.Log("nope");
             yield return null;
         }
 
         for (int i = 0; i < keyCodes.Length; i++) //sets which piece to move
         {
-            //Debug.Log(currPiece);
             if (Input.GetKeyDown(keyCodes[i]))
             {
                 currPiece = i;
@@ -62,7 +60,6 @@ public class Dice : MonoBehaviour
         whosTurn += 1;
         int numOfPlayers = MainMenu.GetNumOfPlayers();
         whosTurn = whosTurn % (numOfPlayers);
-        Debug.Log("Turn: " + whosTurn);
         coroutineAllowed = true;
     }
 }
