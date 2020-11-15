@@ -6,7 +6,7 @@ public class Dice : MonoBehaviour
 
     private Sprite[] diceSides;
     private SpriteRenderer rend;
-    private int whosTurn = 0;
+    private static int whosTurn = 0;
     private bool coroutineAllowed = true;
 
     private KeyCode[] keyCodes = {
@@ -24,6 +24,8 @@ public class Dice : MonoBehaviour
         diceSides = Resources.LoadAll<Sprite>("CardFaces/");
         rend.sprite = diceSides[5];
     }
+
+    public static int GetWhosTurn () {return whosTurn;}
 
     private void OnMouseDown()
     {
