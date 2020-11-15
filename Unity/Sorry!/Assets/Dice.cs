@@ -136,6 +136,7 @@ public class Dice : MonoBehaviour
             yield return new WaitForSeconds(1 + randomDiceSide / 4);
         }
 
+        GameControl.kickBack();
 
         whosTurn += 1;
         int numOfPlayers = MainMenu.GetNumOfPlayers();
@@ -143,6 +144,7 @@ public class Dice : MonoBehaviour
         coroutineAllowed = true;
 
         yield return new WaitForSeconds(1f);
+
 
         if (easy && whosTurn == 1)
         {
@@ -153,6 +155,7 @@ public class Dice : MonoBehaviour
 
 
     }
+
 
 }
 

@@ -20,6 +20,11 @@ public class GameControl : MonoBehaviour
     public static string[] player3Pieces = { "YellowPieceA", "YellowPieceB", "YellowPieceC", "YellowPieceD" };
     public static string[] player4Pieces = { "GreenPieceA", "GreenPieceB", "GreenPieceC", "GreenPieceD" };
 
+    public static string[,] players = new string[,]{ { "RedPieceA", "RedPieceB", "RedPieceC", "RedPieceD" },
+        { "BluePieceA", "BluePieceB", "BluePieceC", "BluePieceD" },
+        { "YellowPieceA", "YellowPieceB", "YellowPieceC", "YellowPieceD" },
+        { "GreenPieceA", "GreenPieceB", "GreenPieceC", "GreenPieceD" } };
+
     public static int diceSideThrown = 0;
     public static int[] player1StartWaypoint = { 0, 0, 0, 0 };
     public static int[] player2StartWaypoint = { 0, 0, 0, 0 };
@@ -32,7 +37,7 @@ public class GameControl : MonoBehaviour
 
     //Default to all real players
     public int numOfPlayers = 4;
-    public int whosTurn = 0;
+    public static int whosTurn = 0;
 
     // Use this for initialization
     void Start()
@@ -145,7 +150,6 @@ public class GameControl : MonoBehaviour
         }
 
 
-
         if ((GameObject.Find(player1Pieces[0]).transform.position == GameObject.Find("RedHomeA").transform.position) &&
             (GameObject.Find(player1Pieces[1]).transform.position == GameObject.Find("RedHomeB").transform.position) &&
             (GameObject.Find(player1Pieces[2]).transform.position == GameObject.Find("RedHomeC").transform.position) &&
@@ -200,6 +204,139 @@ public class GameControl : MonoBehaviour
         }
     }
 
+    public static void kickBack()
+    {
 
+        for (int i = 0; i < 4; i++)
+        {
+            switch(whosTurn)
+            {
+            case 0:
+                if (player1.transform.position == GameObject.Find(player2Pieces[i]).transform.position)
+                {
+                    string Start = "BlueStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player2Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player2StartWaypoint[i] = 0;
+                    GameObject.Find(player2Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+                }
+
+                else if (player1.transform.position == GameObject.Find(player3Pieces[i]).transform.position)
+                {
+                    string Start = "YellowStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player3Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player3StartWaypoint[i] = 0;
+                    GameObject.Find(player3Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+
+                }
+
+                else if (player1.transform.position == GameObject.Find(player4Pieces[i]).transform.position)
+                {
+                    string Start = "GreenStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player4Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player4StartWaypoint[i] = 0;
+                    GameObject.Find(player4Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+
+                }
+                break;
+
+
+            case 1:
+                if (player2.transform.position == GameObject.Find(player1Pieces[i]).transform.position)
+                {
+                    string Start = "RedStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player1Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player1StartWaypoint[i] = 0;
+                    GameObject.Find(player1Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+                }
+
+                else if (player2.transform.position == GameObject.Find(player3Pieces[i]).transform.position)
+                {
+                    string Start = "YellowStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player3Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player3StartWaypoint[i] = 0;
+                    GameObject.Find(player3Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+
+                }
+
+                else if (player2.transform.position == GameObject.Find(player4Pieces[i]).transform.position)
+                {
+                    string Start = "GreenStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player4Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player4StartWaypoint[i] = 0;
+                    GameObject.Find(player4Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+
+                }
+                break;
+
+            case 2:
+                if (player3.transform.position == GameObject.Find(player1Pieces[i]).transform.position)
+                {
+                    string Start = "RedStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player1Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player1StartWaypoint[i] = 0;
+                    GameObject.Find(player1Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+                }
+
+                else if (player3.transform.position == GameObject.Find(player2Pieces[i]).transform.position)
+                {
+                    string Start = "BlueStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player2Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player2StartWaypoint[i] = 0;
+                    GameObject.Find(player2Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+
+                }
+
+                else if (player3.transform.position == GameObject.Find(player4Pieces[i]).transform.position)
+                {
+                    string Start = "GreenStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player4Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player4StartWaypoint[i] = 0;
+                    GameObject.Find(player4Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+
+                }
+                break;
+
+            case 3:
+                if (player4.transform.position == GameObject.Find(player1Pieces[i]).transform.position)
+                {
+                    string Start = "RedStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player1Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player1StartWaypoint[i] = 0;
+                    GameObject.Find(player1Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+                }
+
+                else if (player4.transform.position == GameObject.Find(player2Pieces[i]).transform.position)
+                {
+                    string Start = "BlueStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player2Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player2StartWaypoint[i] = 0;
+                    GameObject.Find(player2Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+
+                }
+
+                else if (player4.transform.position == GameObject.Find(player3Pieces[i]).transform.position)
+                {
+                    string Start = "YellowStart"; switch (i) { case 0: Start += "A"; break; case 1: Start += "B"; break; case 2: Start += "C"; break; case 3: Start += "D"; break; }
+
+                    GameObject.Find(player3Pieces[i]).transform.position = GameObject.Find(Start).transform.position;
+                    player3StartWaypoint[i] = 0;
+                    GameObject.Find(player3Pieces[i]).GetComponent<FollowThePath>().waypointIndex = 0;
+
+                }
+                break;
+            }
+        }
+    }
 
 }
