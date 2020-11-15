@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameControl : MonoBehaviour
 {
 
-    // private static GameObject whoWinsTextShadow, player1MoveText, player2MoveText;
+    private static GameObject BlueMove, RedMove, YellowMove, GreenMove;
 
     private static GameObject player1, player2, player3, player4;
 
@@ -32,7 +32,7 @@ public class GameControl : MonoBehaviour
 
     //Default to all real players
     public int numOfPlayers = 4;
-
+    public int whosTurn = 0;
 
     // Use this for initialization
     void Start()
@@ -40,6 +40,10 @@ public class GameControl : MonoBehaviour
         //whoWinsTextShadow = GameObject.Find("WhoWinsText");
         //player1MoveText = GameObject.Find("Player1MoveText");
         //player2MoveText = GameObject.Find("Player2MoveText");
+        BlueMove = GameObject.Find("BlueMove");
+        GreenMove = GameObject.Find("GreenMove");
+        YellowMove = GameObject.Find("YellowMove");
+        RedMove = GameObject.Find("RedMove");
         
         numOfPlayers = MainMenu.GetNumOfPlayers();
         Debug.Log("Number of Players:" + numOfPlayers);
@@ -58,11 +62,47 @@ public class GameControl : MonoBehaviour
         //whoWinsTextShadow.gameObject.SetActive(false);
         //player1MoveText.gameObject.SetActive(true);
         //player2MoveText.gameObject.SetActive(false);
+        
+        RedMove.gameObject.SetActive(true);
+        BlueMove.gameObject.SetActive(false);
+        YellowMove.gameObject.SetActive(false);
+        GreenMove.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        whosTurn = Dice.GetWhosTurn();
+        switch (whosTurn)
+        {
+            case 0:
+                RedMove.gameObject.SetActive(true);
+                BlueMove.gameObject.SetActive(false);
+                YellowMove.gameObject.SetActive(false);
+                GreenMove.gameObject.SetActive(false);
+                break;
+
+            case 1:
+                RedMove.gameObject.SetActive(false);
+                BlueMove.gameObject.SetActive(true);
+                YellowMove.gameObject.SetActive(false);
+                GreenMove.gameObject.SetActive(false);
+                break;
+
+            case 2:
+                RedMove.gameObject.SetActive(false);
+                BlueMove.gameObject.SetActive(false);
+                YellowMove.gameObject.SetActive(true);
+                GreenMove.gameObject.SetActive(false);
+                break;
+
+            case 3:
+                RedMove.gameObject.SetActive(false);
+                BlueMove.gameObject.SetActive(false);
+                YellowMove.gameObject.SetActive(false);
+                GreenMove.gameObject.SetActive(true);
+                break;
+        }
 
         for (int i = 0; i < keyCodes.Length; i++) //sets which piece to move
         {

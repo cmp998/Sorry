@@ -6,7 +6,7 @@ public class Dice : MonoBehaviour
 
     private Sprite[] diceSides;
     private SpriteRenderer rend;
-    private int whosTurn = 0;
+    private static int whosTurn = 0;
     private bool coroutineAllowed = true;
 
     public static string[,] players = new string[,]{ { "RedPieceA", "RedPieceB", "RedPieceC", "RedPieceD" }, 
@@ -29,6 +29,8 @@ public class Dice : MonoBehaviour
         diceSides = Resources.LoadAll<Sprite>("CardFaces/");
         rend.sprite = diceSides[5];
     }
+
+    public static int GetWhosTurn () {return whosTurn;}
 
     private void OnMouseDown()
     {
@@ -94,18 +96,13 @@ public class Dice : MonoBehaviour
                 break;
         }
 
-        //Debug.Log(GameObject.Find(players[whosTurn, currPiece]).transform.position);
-        //Debug.Log(GameObject.Find(home).transform.position);
-
-        Debug.Log(players[whosTurn, currPiece]);
-        Debug.Log(home);
 
         if (GameObject.Find(players[whosTurn,currPiece]).transform.position == GameObject.Find(home).transform.position)
             {
 
             Debug.Log("check");    
 
-                if (randomDiceSide == 1 || randomDiceSide == 2)
+                if (randomDiceSide == 0 || randomDiceSide == 1)
                 {
                     GameControl.diceSideThrown = randomDiceSide + 1;
 
