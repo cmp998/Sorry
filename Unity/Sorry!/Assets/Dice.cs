@@ -10,6 +10,7 @@ public class Dice : MonoBehaviour
     private bool coroutineAllowed = true;
 
     private static bool easy = MainMenu.GetEasy();
+    private static bool hard = MainMenu.GetHard();
 
     public static string[,] players = new string[,]{ { "RedPieceA", "RedPieceB", "RedPieceC", "RedPieceD" }, 
         { "BluePieceA", "BluePieceB", "BluePieceC", "BluePieceD" }, 
@@ -54,6 +55,24 @@ public class Dice : MonoBehaviour
         if(easy && whosTurn == 1)
         {
             currPiece = Random.Range(0, 4);
+        }
+        else if(hard && whosTurn == 1)
+        {
+            if (randomDiceSide == 0 || randomDiceSide == 1)
+            {
+                for(int i = 0; i < 4; i++)
+                {
+                    if(GameControl.player2StartWaypoint[i] == 0)
+                    {
+                        currPiece = i;
+                    }
+
+                }
+            }
+            else
+            {
+                currPiece = Random.Range(0, 4);
+            }
         }
         else
         {
@@ -146,7 +165,7 @@ public class Dice : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
 
-        if (easy && whosTurn == 1)
+        if ((easy || hard) && whosTurn == 1)
         {
             yield return new WaitForSeconds(1f);
             StartCoroutine("RollTheDice");
