@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameControl : MonoBehaviour
 {
 
-    private static GameObject BlueMove, RedMove, YellowMove, GreenMove;
+    private static GameObject BlueMove, RedMove, YellowMove, GreenMove, winText;
 
     private static GameObject player1, player2, player3, player4;
 
@@ -26,10 +26,10 @@ public class GameControl : MonoBehaviour
         { "GreenPieceA", "GreenPieceB", "GreenPieceC", "GreenPieceD" } };
 
     public static int diceSideThrown = 0;
-    public static int[] player1StartWaypoint = { 0, 0, 0, 0 };
-    public static int[] player2StartWaypoint = { 0, 0, 0, 0 };
-    public static int[] player3StartWaypoint = { 0, 0, 0, 0 };
-    public static int[] player4StartWaypoint = { 0, 0, 0, 0 };
+    public static int[] player1StartWaypoint = { 60, 60, 60, 60 };
+    public static int[] player2StartWaypoint = { 60, 60, 60, 60 };
+    public static int[] player3StartWaypoint = { 60, 60, 60, 60 };
+    public static int[] player4StartWaypoint = { 60, 60, 60, 60 };
 
     public static int currPiece = 0;
 
@@ -49,6 +49,7 @@ public class GameControl : MonoBehaviour
         GreenMove = GameObject.Find("GreenMove");
         YellowMove = GameObject.Find("YellowMove");
         RedMove = GameObject.Find("RedMove");
+        winText = GameObject.Find("winText");
         
         numOfPlayers = MainMenu.GetNumOfPlayers();
 
@@ -62,15 +63,12 @@ public class GameControl : MonoBehaviour
         player2.GetComponent<FollowThePath>().moveAllowed = false;
         player3.GetComponent<FollowThePath>().moveAllowed = false;
         player4.GetComponent<FollowThePath>().moveAllowed = false;
-
-        //whoWinsTextShadow.gameObject.SetActive(false);
-        //player1MoveText.gameObject.SetActive(true);
-        //player2MoveText.gameObject.SetActive(false);
         
         RedMove.gameObject.SetActive(true);
         BlueMove.gameObject.SetActive(false);
         YellowMove.gameObject.SetActive(false);
         GreenMove.gameObject.SetActive(false);
+        winText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -154,25 +152,53 @@ public class GameControl : MonoBehaviour
             (GameObject.Find(player1Pieces[1]).transform.position == GameObject.Find("RedHomeB").transform.position) &&
             (GameObject.Find(player1Pieces[2]).transform.position == GameObject.Find("RedHomeC").transform.position) &&
             (GameObject.Find(player1Pieces[3]).transform.position == GameObject.Find("RedHomeD").transform.position))
-            gameOver = true;
+            {
+                RedMove.gameObject.SetActive(true);
+                BlueMove.gameObject.SetActive(false);
+                YellowMove.gameObject.SetActive(false);
+                GreenMove.gameObject.SetActive(false);
+                winText.gameObject.SetActive(true);
+                gameOver = true;
+            }
 
         if ((GameObject.Find(player2Pieces[0]).transform.position == GameObject.Find("BlueHomeA").transform.position) &&
             (GameObject.Find(player2Pieces[1]).transform.position == GameObject.Find("BlueHomeB").transform.position) &&
             (GameObject.Find(player2Pieces[2]).transform.position == GameObject.Find("BlueHomeC").transform.position) &&
             (GameObject.Find(player2Pieces[3]).transform.position == GameObject.Find("BlueHomeD").transform.position))
-            gameOver = true;
+            {
+                RedMove.gameObject.SetActive(false);
+                BlueMove.gameObject.SetActive(true);
+                YellowMove.gameObject.SetActive(false);
+                GreenMove.gameObject.SetActive(false);
+                winText.gameObject.SetActive(true);
+                gameOver = true;
+            }
 
         if ((GameObject.Find(player3Pieces[0]).transform.position == GameObject.Find("YellowHomeA").transform.position) &&
             (GameObject.Find(player3Pieces[1]).transform.position == GameObject.Find("YellowHomeB").transform.position) &&
             (GameObject.Find(player3Pieces[2]).transform.position == GameObject.Find("YellowHomeC").transform.position) &&
             (GameObject.Find(player3Pieces[3]).transform.position == GameObject.Find("YellowHomeD").transform.position))
-            gameOver = true;
+            {
+                RedMove.gameObject.SetActive(false);
+                BlueMove.gameObject.SetActive(false);
+                YellowMove.gameObject.SetActive(true);
+                GreenMove.gameObject.SetActive(false);
+                winText.gameObject.SetActive(true);
+                gameOver = true;
+            }
 
         if ((GameObject.Find(player4Pieces[0]).transform.position == GameObject.Find("GreenHomeA").transform.position) &&
             (GameObject.Find(player4Pieces[1]).transform.position == GameObject.Find("GreenHomeB").transform.position) &&
             (GameObject.Find(player4Pieces[2]).transform.position == GameObject.Find("GreenHomeC").transform.position) &&
             (GameObject.Find(player4Pieces[3]).transform.position == GameObject.Find("GreenHomeD").transform.position))
-            gameOver = true;
+            {
+                RedMove.gameObject.SetActive(false);
+                BlueMove.gameObject.SetActive(false);
+                YellowMove.gameObject.SetActive(false);
+                GreenMove.gameObject.SetActive(true);
+                winText.gameObject.SetActive(true);
+                gameOver = true;
+            }
     }
 
     public static void MovePlayer(int playerToMove, int curr)
